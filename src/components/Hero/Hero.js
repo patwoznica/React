@@ -1,5 +1,6 @@
 import React from 'react';
 import styles from './Hero.scss';
+import PropTypes from 'prop-types';
 
 class Hero extends React.Component {
   render() {
@@ -11,5 +12,9 @@ class Hero extends React.Component {
     )
   }
 }
+
+Hero.propTypes = {
+  titleText: PropTypes.node,
+};
 
 export default Hero;
